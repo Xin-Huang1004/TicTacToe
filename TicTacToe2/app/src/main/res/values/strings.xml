@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="title_activity_with_another_player">WithAnotherPlayer</string>
+
+    <drawable name="clr_normal">#ffffff</drawable>
+    <drawable name="clr_pressed">#7EC0EE</drawable>
+</resources>

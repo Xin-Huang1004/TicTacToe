@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7EC0EE"
+    tools:context="com.example.xin.tictactoe.MainActivity">
+
+    <Button
+        android:id="@+id/withComputer"
+        android:layout_width="222dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/withPlayer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/btn_selector"
+        android:text="Play with computer"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <Button
+        android:id="@+id/withPlayer"
+        android:text="Play with another player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:layout_alignEnd="@+id/withComputer"
+        android:background="@drawable/btn_selector"
+        android:layout_alignStart="@+id/withComputer" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        tools:layout_editor_absoluteX="148dp"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteY="284dp"
+        android:background="@drawable/btn_selector"
+        android:layout_below="@+id/withPlayer"
+        android:layout_alignStart="@+id/withPlayer"
+        android:layout_marginTop="77dp"
+        android:layout_alignEnd="@+id/withPlayer" />
+</RelativeLayout>

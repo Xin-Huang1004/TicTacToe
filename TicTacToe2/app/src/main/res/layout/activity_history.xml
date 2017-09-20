@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.xin.tictactoe.History">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="18dp"
+        android:text="Play with computer:" />
+
+    <TextView
+        android:id="@+id/PlayerHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/ComputerHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:layout_below="@+id/PlayerHistory"
+        android:layout_alignStart="@+id/PlayerHistory" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/ComputerHistory"
+        android:layout_marginTop="83dp"
+        android:text="Play with another player:" />
+
+    <TextView
+        android:id="@+id/PlayerXHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ComputerHistory"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="27dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/PlayerOHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PlayerXHistory"
+        android:layout_below="@+id/PlayerXHistory"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/drawHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ComputerHistory"
+        android:layout_below="@+id/ComputerHistory"
+        android:layout_marginTop="15dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/DrawHistory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        android:layout_below="@+id/PlayerOHistory"
+        android:layout_alignStart="@+id/PlayerOHistory" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/DrawHistory2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:id="@+id/playerRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginStart="11dp"
+        android:layout_alignBaseline="@+id/PlayerHistory"
+        android:layout_alignBottom="@+id/PlayerHistory"
+        android:layout_toEndOf="@+id/total" />
+
+    <TextView
+        android:id="@+id/computerRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_above="@+id/textView3"
+        android:layout_alignStart="@+id/playerRate" />
+
+    <TextView
+        android:id="@+id/drawRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/drawHistory"
+        android:layout_alignBottom="@+id/drawHistory"
+        android:layout_alignStart="@+id/computerRate"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/playerXRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/drawRate"
+        android:layout_alignTop="@+id/PlayerXHistory"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/playerORate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/PlayerOHistory"
+        android:layout_alignBottom="@+id/PlayerOHistory"
+        android:layout_alignStart="@+id/playerXRate" />
+
+    <TextView
+        android:id="@+id/drawRate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total"
+        android:layout_alignStart="@+id/playerORate"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/playerRate" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/playerXRate"
+        android:text="Rate" />
+</RelativeLayout>
